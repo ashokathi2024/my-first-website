@@ -1,43 +1,51 @@
 <!DOCTYPE html>
-<html>
-    <title>
-        Advance nested list
-    </title>
-    <body>
-        <h1>Advanced Nested List</h1>
-        <ol type="I">
-            <li>Science
-                <ul type="disk">
-                   <li>Physices</li>
-                   <ul type="squre">
-                    <li>Mechinanics</li>
-                    <li>Thermodynamices</li>
-                   </ul>
-                   <dl>
-                    <dt>Quantum Mechinanics</dt>
-                    <dd>The branch of mechanics that deal with microscopic particles</dd>
-                   <dt>Relativity</dt>
-                   <dd>Ablert Einsteins theories of specical and geneal Relativity</dd>
-                </dl>
-                </ul>
-                <
-            </li>
-         <ul type="disk">
-            <li>Chemistry
-                <ul type="squad">
-                    <li>Organic Chemistry</li>
-                    <li>Inorganic Chemistry</li>
-                </ul>"
-            </li>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Please Enter Your Details</h1>
+    <form>
+      <label for="username">Username:</label>
+      <input 
+      type="text" 
+      id="username"
+      name="username"
+      placeholder="Enter your username"
+      required
+      autocomplete="on"
+      maxlength="20"
+      minlength="5"
+      size="30"
+       />
+      <br />
 
-         </ul>
-         <dl>
-           <dt>Organic Chemistry</dt> 
-           <dd>The Study of carbon contaning compounds</dd>
-           <dt>Inorganic Chemistry</dt> 
-           <dd>The Study of inorganic compounds</dd>
-         </dl>
+      <label for="pass">Password:</label>
+      <input
+       type="password"
+        id="pass" 
+        name="password"
+      placeholder="Enter your password"
+      required
+      autocomplete="on"
+      maxlength="20"
+      minlength="5"
+      size="30"/>
+      <br />
+        
+      <label for="dis">Disabled Input:</label>
+      <input 
+      type="text" 
+      id="dis"
+      name="Disabled"
+      placeholder="This field is disabled"
+      disabled
+       />
+      <br /> 
 
-        </ol>
-    </body>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
 </html>
