@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashok School</title>
+    <style>
+        /* General styling */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Background image */
+        body {
+            background: url('file:///C:/Users/HP/Downloads/DALL%C2%B7E%202025-01-08%2022.41.39%20-%20A%20beautifully%20designed%20modern%20school%20building%20named%20\'Ashok%20School\'%20with%20a%20lush%20green%20campus,%20large%20windows,%20and%20a%20welcoming%20entrance.%20The%20design%20inclu.webp') 
+            no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        /* Navigation bar */
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Centered content */
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        /* Table styling */
+        table {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-collapse: collapse;
+            width: 50%;
+            margin-top: 100px; /* To adjust for navbar height */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        table td {
+            padding: 10px 20px;
+            text-align: left;
+            font-size: 16px;
+        }
+
+        table input, table select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        table button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        table button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About School</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <!-- Centered content -->
+    <div class="content">
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="name" placeholder="Enter your name"></td>
+            </tr>
+            <tr>
+                <td>Surname:</td>
+                <td><input type="text" name="surname" placeholder="Enter your surname"></td>
+            </tr>
+            <tr>
+                <td>Class:</td>
+                <td>
+                    <select name="class">
+                        <option value="nursery">Nursery</option>
+                        <option value="lkg">LKG</option>
+                        <option value="ukg">UKG</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Medium:</td>
+                <td>
+                    <select name="medium" id="medium">
+                        <option value="telugu">Telugu</option>
+                        <option value="english">English</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Section:</td>
+                <td>
+                    <select name="section">
+                        <option value="1">Section 1</option>
+                        <option value="2">Section 2</option>
+                        <option value="3">Section 3</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit">Submit</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
